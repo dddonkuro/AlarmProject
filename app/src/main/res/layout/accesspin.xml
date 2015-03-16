@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@drawable/cloudy">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:paddingTop="40dp"
+        android:id="@+id/innerlayout">
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Send"
+            android:textSize="30dp"
+            android:id="@+id/Sendbutton"
+            android:layout_marginTop="73dp"
+            android:background="#7FE817"
+          />
+        <EditText
+            android:id="@+id/pinText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:ems="5"
+            android:inputType="number"
+            android:layout_marginTop="20dp">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="PIN CODE:"
+            android:textSize="12dp"
+            android:layout_marginTop="2dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

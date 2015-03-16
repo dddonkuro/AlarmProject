@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF5EE">
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:paddingTop="20dp"
+        android:background ="@drawable/background_images"
+        android:id="@+id/innerlayout">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="STOP"
+            android:textSize="50dp"
+            android:id="@+id/Stopbutton"
+            android:layout_marginTop="80dp"
+            android:background="#FF0000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="PIN CODE:"
+            android:id="@+id/AlarmCancel"
+            android:textColor="#FFF5EE"
+            android:layout_marginTop="30dp"
+            android:layout_alignLeft="@+id/Stopbutton"/>
+
+        <EditText
+            android:id="@+id/pinText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="5"
+            android:inputType="text"
+             android:layout_marginLeft= "110dp"
+            android:layout_gravity= "center"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true">
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>
